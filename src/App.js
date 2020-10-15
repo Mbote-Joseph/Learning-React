@@ -6,6 +6,8 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message';
 import Test from './components/Test';
+import Counter from './components/Counter';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Hello name="Joseph"/>
         <Hello name="Mbote"/>
+        <Counter />
         
       </header>
     </div>
