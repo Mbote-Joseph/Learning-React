@@ -6,6 +6,8 @@ export class Form extends Component {
     
         this.state = {
              username: '',
+             firstname: '',
+             lastname: '',
              email: '',
              password: '',
              comment :'',
@@ -18,6 +20,17 @@ export class Form extends Component {
             username: event.target.value
         })
     }
+    handleFirstnameChange = event => {
+        this.setState({
+            firstname: event.target.value
+        })
+    }
+    handleLastnameChange = event => {
+        this.setState({
+            lastname: event.target.value
+        })
+    }
+    
     handleEmailChange = event => {
         this.setState({
             email: event.target.value
@@ -52,6 +65,14 @@ export class Form extends Component {
                 <div>
                    <label>Username</label>
                    <input type="text" value={this.state.username} onChange={this.handleUsernameChange}/>
+                </div>
+                <div>
+                   <label>First name</label>
+                   <input type="text" value={this.state.firstname} onChange={this.handleFirstnameChange }/>
+                </div>
+                <div>
+                   <label>Last name</label>
+                   <input type="text" value={this.state.lastname} onChange={this.handleLastnameChange}/>
                 </div>
                 <div>
                    <label>Email</label>
